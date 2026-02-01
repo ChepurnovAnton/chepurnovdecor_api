@@ -17,20 +17,20 @@
       "target": "api::category.category",
       "mappedBy": "sample"
     },
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": false
     },
-    "Description": {
+    "description": {
       "type": "text",
-      "required": true
+      "required": false
     },
-    "Price": {
+    "price": {
       "type": "biginteger",
       "required": true
     },
-    "Picture": {
+    "picture": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
@@ -39,6 +39,10 @@
         "videos",
         "audios"
       ]
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
