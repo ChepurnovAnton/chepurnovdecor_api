@@ -523,7 +523,7 @@ export interface ApiSampleSample extends Struct.CollectionTypeSchema {
       'api::sample.sample'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String & Schema.Attribute.Required;
+    name: Schema.Attribute.String;
     picture: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
