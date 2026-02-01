@@ -529,7 +529,7 @@ export interface ApiSampleSample extends Struct.CollectionTypeSchema {
       true
     >;
     popular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    price: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    price: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
