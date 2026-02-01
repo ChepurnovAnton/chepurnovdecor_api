@@ -16,9 +16,9 @@
       "required": true,
       "unique": true
     },
-    "sample": {
+    "samples": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::sample.sample",
       "inversedBy": "categories"
     }
