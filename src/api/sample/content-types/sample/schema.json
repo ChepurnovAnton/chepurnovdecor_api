@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "samples",
+  "info": {
+    "singularName": "sample",
+    "pluralName": "samples",
+    "displayName": "Sample"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "sample"
+    },
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
