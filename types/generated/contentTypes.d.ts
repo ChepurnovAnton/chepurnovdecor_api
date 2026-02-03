@@ -550,6 +550,7 @@ export interface ApiSampleSample extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    exploitation: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -562,6 +563,7 @@ export interface ApiSampleSample extends Struct.CollectionTypeSchema {
       true
     >;
     popular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    preparation: Schema.Attribute.String;
     price: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

@@ -26,6 +26,12 @@
       "type": "text",
       "required": false
     },
+    "preparation": {
+      "type": "string"
+    },
+    "exploitation": {
+      "type": "text"
+    },
     "price": {
       "type": "biginteger",
       "required": false
