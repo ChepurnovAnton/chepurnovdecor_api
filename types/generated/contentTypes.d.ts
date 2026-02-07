@@ -523,6 +523,9 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
       'api::portfolio.portfolio'
     > &
       Schema.Attribute.Private;
+    previewVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
